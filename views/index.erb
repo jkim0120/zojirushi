@@ -1,1 +1,9 @@
 <h1>Turtle Lights</h1>
+<p>The light is currently <%= @light_status %></p>
+
+<form action="/lights" method="post">
+  <input type="radio" name="status" value="on" />On<br/>
+  <input type="radio" name="status" value="off" />Off<br/>
+
+  <button type="submit">Submit</button>
+</form>
