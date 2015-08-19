@@ -4,6 +4,7 @@
     text-align: center;
     font-size: 5em;
     font-family: roboto;
+    color: #333;
   }
 
   .option {
@@ -18,6 +19,19 @@
     box-shadow: 0 0.1em 0.1em silver;
     border-radius: 10px;
     padding: 0.5em;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  input[type=radio]:checked + label {
+    color: tomato;
+  }
+
+  span {
+    text-transform: uppercase;
+    color: tomato;
   }
 
   button:active {
@@ -35,16 +49,16 @@
 
 <div class="options">
   <h1 style="font-size: 10em'">Turtle Lights</h1>
-  <p style="font-size: 7em'">The light is currently <%= @light_status %></p>
+  <p style="font-size: 7em'">The light is currently <span><%= @light_status %></span></p>
 
   <form action="/lights" method="post">
     <div class="option">
-      <label for="input-on">ON</label>
       <input id="input-on" type="radio" name="status" value="on" />
+      <label for="input-on">ON</label>
     </div>
     <div class="option">
-      <label for="input-off">OFF</label>
       <input id="input-off" type="radio" name="status" value="off" />
+      <label for="input-off">OFF</label>
     </div>
 
     <button type="submit">Submit</button>
