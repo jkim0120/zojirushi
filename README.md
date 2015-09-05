@@ -3,6 +3,10 @@ Zojirushi is an app that connects my Zojirushi rice cooker to the internet, allo
 
 Deployed at: [zojirushi.herokuapp.com](http://zojirushi.herokuapp.com)
 
-## Tools Used
+## Hardware Used
 * Spark Core
+* PowerSwitch Tail II
+* Zojirushi Rice Cooker
+
+## Software Used
 * Sinatra

@@ -1,0 +1,10 @@
+{
+  "eventName": "on",
+  "url": "https://zojirushi.herokuapp.com/cook",
+  "requestType": "POST",
+  "data":
+  {
+    "status": "on"
+  },
+  "mydevices": true
+}
