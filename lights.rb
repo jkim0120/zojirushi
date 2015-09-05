@@ -6,7 +6,7 @@ enable :sessions
 
 get '/' do
   @core = RubySpark::Core.new('54ff71066678574924590267', '6dfc7bb0441d7fe1712bdf6e664e49bd2ef21a91')
-  @light_status = if @core.variable('on') == 0
+  @cook_status = if @core.variable('on') == 0
                     'off'
                   else
                     'on'
@@ -15,7 +15,7 @@ get '/' do
   erb :index
 end
 
-post '/lights' do
+post '/cook' do
   @core = RubySpark::Core.new('54ff71066678574924590267', '6dfc7bb0441d7fe1712bdf6e664e49bd2ef21a91')
   @status = params[:status]
   @core.function('toggleOn', @status)

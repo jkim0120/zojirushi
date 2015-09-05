@@ -11,12 +11,17 @@
 <body>
   <div class="switch">
     <img class="zojirushi" src="/img/zojirushi.png" alt="">
-    <div class="inactive light keep-warm"></div>
-    <p>Keep Warm</p>
-    <div class="inactive light cooking"></div>
-    <p>Cooking</p>
-    <div class="inactive light off"></div>
-    <p>Off</p>
+    <% if @cook_status == 'on' %>
+      <div class="inactive light keep-warm"></div>
+      <p>Keep Warm</p>
+      <div class="light cooking"></div>
+      <p>Cooking</p>
+    <% else %>
+      <div class="light keep-warm"></div>
+      <p>Keep Warm</p>
+      <div class="inactive light cooking"></div>
+      <p>Cooking</p>
+    <% end %>
   </div>
 
   <form class="options" action="/lights" method="post">
@@ -28,5 +33,9 @@
 
     <button id="submit" type="submit">Send</button>
   </form>
+
+  <div class="copy">
+    <p>&copy; Joseph Kim</p>
+  </div>
 </body>
 </html>
