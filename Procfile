@@ -1,1 +1,1 @@
-web: bundle exec ruby lights.rb -p $PORT
+web: bundle exec ruby cook.rb -p $PORT

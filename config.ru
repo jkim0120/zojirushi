@@ -1,2 +1,2 @@
-require './lights'
+require './cook'
 run Sinatra::Application
