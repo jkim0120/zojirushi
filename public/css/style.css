@@ -1,0 +1,103 @@
+  body {
+    display: flex;
+    -webkit-flex-direction: column;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    font-size: 5em;
+    font-family: roboto;
+    color: #333;
+  }
+
+  .options {
+    margin: 1em;
+    display: inline;
+  }
+
+  button {
+    display: block;
+    font-size: 1em;
+    font-family: roboto;
+    width: 6.5em;
+    background-color: rgb(250,250,250);
+    box-shadow: 0 0.1em 0.1em silver;
+    border-radius: 10px;
+    border-width: 20px;
+    border-style: solid;
+    border-color: lightgrey;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  label {
+    padding: 1em;
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+
+  input[type=radio]:checked + label {
+    color: tomato;
+  }
+
+  span {
+    text-transform: uppercase;
+    color: tomato;
+  }
+
+  button:active {
+    box-shadow: 0 1px 1px silver;
+    margin-top: 0.1em;
+  }
+
+  .switch {
+    width: 6em;
+    height: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 3em 3em 0.1em 0.1em;
+    border-color: lightgrey;
+    border-width: 20px;
+    border-style: solid;
+    background-color: rgb(250,250,250);
+    box-shadow: 0 0.1em 0.1em silver;
+  }
+
+  .switch > p {
+    font-size: 70%;
+  }
+
+  .zojirushi {
+    width: 75%;
+  }
+
+  .light {
+    width: 60%;
+    height: 0.5em;
+    border-radius: 0.5em;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 0.1em 0.1em silver;
+  }
+
+  .keep-warm {
+    background-color: orange;
+  }
+
+  .cooking {
+    background-color: red;
+  }
+
+  .off {
+    background-color: firebrick;
+  }
+
+  .inactive {
+    background-color: lightgrey;
+  }
